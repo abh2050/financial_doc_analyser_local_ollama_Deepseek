@@ -190,7 +190,7 @@ pip install streamlit requests ollama pandas beautifulsoup4 langchain_community 
 ## File Structure
 
 ```
-├── main1.py          # Main Streamlit application
+├── main.py          # Main Streamlit application
 ├── config.json                  # Configuration file (created on first run)
 ├── README.md                    # Project documentation (this file)
 └── requirements.txt             # Python dependencies
