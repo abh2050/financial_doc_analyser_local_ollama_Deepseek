@@ -3,6 +3,24 @@
 A Streamlit-based application designed to download, process, and analyze SEC filings (e.g., 10-K, 10-Q, 8-K). This tool leverages AI-powered embeddings, vector databases, and advanced document processing techniques to provide financial insights and enable trend comparisons over time.
 
 ---
+## Why Local RAG is the Future
+
+- Retrieval-Augmented Generation (RAG) is revolutionizing how enterprises interact with their data, enabling more precise and context-aware responses. Local RAG offers several advantages:
+- Data Privacy & Security: Running the model locally ensures that sensitive financial documents never leave the system, protecting against leaks and compliance risks.
+- Faster Querying: Since data retrieval happens on-premise, response times are significantly lower compared to cloud-based alternatives.
+- Customization & Control: Businesses can fine-tune embeddings, chunk sizes, and document retrieval strategies without vendor lock-in.
+- Reduced Cloud Costs: Eliminating dependence on cloud API calls results in significant cost savings, especially for high-volume queries.
+
+## Speeding Up Local RAG with GPUs & Parallelization
+
+To enhance performance, Local RAG implementations can be accelerated using:
+
+- High-Performance GPUs: Running embedding generation and vector searches on modern GPUs (e.g., NVIDIA A100, H100) dramatically improves inference speeds.
+- Parallel Processing: Using multi-threading and distributed computing across multiple GPUs or CPU cores enables batch processing of filings and retrieval queries.
+- Optimized Indexing: Advanced vector databases like FAISS and ChromaDB support GPU-based acceleration, further reducing search latency.
+- Memory Mapping Techniques: Keeping embeddings in shared memory allows for faster access, minimizing disk I/O bottlenecks.
+
+By leveraging these techniques, SEC Financial Document Explorer ensures scalable and efficient document retrieval, making financial analysis faster and more secure.
 
 ## Table of Contents
 
@@ -45,6 +63,13 @@ Using a combination of Python libraries (Streamlit, Requests, BeautifulSoup, Lan
 - **Cache and Configuration Management:**  Implements caching mechanisms and customizable settings.
 
 ---
+![](https://github.com/abh2050/financial_doc_analyser_local_ollama_Deepseek/blob/main/demo/pic1.png)
+![](https://github.com/abh2050/financial_doc_analyser_local_ollama_Deepseek/blob/main/demo/pic2.png)
+![](https://github.com/abh2050/financial_doc_analyser_local_ollama_Deepseek/blob/main/demo/pic3.png)
+![](https://github.com/abh2050/financial_doc_analyser_local_ollama_Deepseek/blob/main/demo/pic4.png)
+![](https://github.com/abh2050/financial_doc_analyser_local_ollama_Deepseek/blob/main/demo/pic5.png)
+![](https://github.com/abh2050/financial_doc_analyser_local_ollama_Deepseek/blob/main/demo/pic6.png)
+
 
 ## Requirements
 
@@ -90,7 +115,7 @@ pip install streamlit requests ollama pandas beautifulsoup4 langchain_community 
 4. **Download DeepSeek Model:**
    - After installing the Ollama CLI, download the DeepSeek model by running:
      ```bash
-     ollama pull deepseek-r1
+     ollama run deepseek-r1:671b
      ```
    - This command will download the DeepSeek-R1 model, which is essential for processing and analyzing documents within the application.
 
@@ -117,7 +142,7 @@ pip install streamlit requests ollama pandas beautifulsoup4 langchain_community 
 
 1. **Run the Application:**
    ```bash
-   streamlit run your_script_name.py
+   streamlit run main1.py
    ```
 
 2. **Navigate the Tabs:**
