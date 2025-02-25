@@ -142,7 +142,7 @@ pip install streamlit requests ollama pandas beautifulsoup4 langchain_community 
 
 1. **Run the Application:**
    ```bash
-   streamlit run main1.py
+   streamlit run main.py
    ```
 
 2. **Navigate the Tabs:**
