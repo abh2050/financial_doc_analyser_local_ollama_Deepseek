@@ -1,0 +1,6 @@
+requests
+pdfkit
+fpdf
+python-dotenv
+sec-api
+streamlit

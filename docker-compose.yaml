@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - /usr/local/bin/ollama:/usr/local/bin/ollama
+    depends_on:
+      - service
+
+  service:
+    image: your-service-image
+    ports:
+      - "11434:11434"
