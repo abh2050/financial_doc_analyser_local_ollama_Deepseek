@@ -60,7 +60,10 @@ Using a combination of Python libraries (Streamlit, Requests, BeautifulSoup, Lan
   - `langchain_core`
   - `tqdm`
   - `concurrent.futures`
-  
+
+- **Ollama CLI:** Required to run DeepSeek models.
+- **DeepSeek Model:** AI model for processing and analyzing documents.
+
 Install required packages via pip:
 ```bash
 pip install streamlit requests ollama pandas beautifulsoup4 langchain_community langchain_chroma tqdm
@@ -81,7 +84,17 @@ pip install streamlit requests ollama pandas beautifulsoup4 langchain_community 
    pip install -r requirements.txt
    ```
 
-3. **Set Up Configuration:**  
+3. **Install Ollama CLI:**
+   - Visit the [Ollama website](https://ollama.com) and follow the installation instructions for your operating system.
+
+4. **Download DeepSeek Model:**
+   - After installing the Ollama CLI, download the DeepSeek model by running:
+     ```bash
+     ollama pull deepseek-r1
+     ```
+   - This command will download the DeepSeek-R1 model, which is essential for processing and analyzing documents within the application.
+
+5. **Set Up Configuration:**  
    The application creates `config.json` in `~/financial_doc_analyzer` on first run. Adjust settings as needed.
 
 ---
@@ -152,7 +165,7 @@ pip install streamlit requests ollama pandas beautifulsoup4 langchain_community 
 ## File Structure
 
 ```
-├── your_script_name.py          # Main Streamlit application
+├── main1.py          # Main Streamlit application
 ├── config.json                  # Configuration file (created on first run)
 ├── README.md                    # Project documentation (this file)
 └── requirements.txt             # Python dependencies
@@ -169,6 +182,4 @@ pip install streamlit requests ollama pandas beautifulsoup4 langchain_community 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-
-*Maintained by [YourCompanyName]. Contact [contact@example.com] for inquiries.*
 
