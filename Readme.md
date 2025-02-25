@@ -100,7 +100,7 @@ pip install streamlit requests ollama pandas beautifulsoup4 langchain_community 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/sec-financial-document-explorer.git
+   git clone [https://github.com/abh2050/financial_doc_analyser_local_ollama_Deepseek.git]
    cd sec-financial-document-explorer
    ```
 
