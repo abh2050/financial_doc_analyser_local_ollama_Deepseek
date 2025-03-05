@@ -1,7 +1,7 @@
 # SEC Financial Document Explorer
 
 A Streamlit-based application designed to download, process, and analyze SEC filings (e.g., 10-K, 10-Q, 8-K). This tool leverages AI-powered embeddings, vector databases, and advanced document processing techniques to provide financial insights and enable trend comparisons over time.
-
+![System Architecture](https://github.com/abh2050/financial_doc_analyser_local_ollama_Deepseek/blob/main/demo/rag_ollama.png)
 ---
 ## Why Local RAG is the Future
 
